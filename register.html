@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register | Spendora</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+	<header>
+		<a class="brand" href="index.html">Spendora</a>
+		<nav aria-label="Main navigation">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="products.html">Products</a>
+			<a href="services.html">Services</a>
+			<a href="employee.html">Employees</a>
+			<a href="contact.html">Contact</a>
+			<a href="payment.html">Payment</a>
+			<a href="register.html" aria-current="page">Register</a>
+		</nav>
+	</header>
+
+	<main>
+		<h1>Create an Account</h1>
+		<form class="register-form" action="payment.html" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Join us and start your journey today!</legend>
+				<p class="form-row">
+					<label for="fullname">Full name:</label>
+					<input type="text" id="fullname" name="fullname" autocomplete="name" required>
+				</p>
+				<p class="form-row">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="e.g. abc@gmail.com" autocomplete="email" required>
+				</p>
+				<p class="form-row">
+					<label for="pwd">Password:</label>
+					<input type="password" id="pwd" name="password" minlength="8" autocomplete="new-password" required>
+				</p>
+				<p class="form-row">
+					<label for="cpwd">Confirm password:</label>
+					<input type="password" id="cpwd" name="cpassword" minlength="8" autocomplete="new-password" required>
+				</p>
+				<p class="form-row">
+					<label for="yob">Birthday:</label>
+					<input type="date" id="yob" name="yob" autocomplete="bday" required>
+				</p>
+				<p class="form-row">
+					<label for="dt">Date and time:</label>
+					<input type="datetime-local" id="dt" name="dt" required>
+				</p>
+				<p class="form-row">
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" placeholder="e.g. +254720247856" autocomplete="tel" required>
+				</p>
+				<p class="form-row">
+					<label for="file">Upload file:</label>
+					<input type="file" id="file" name="file" required>
+				</p>
+				<div class="form-row">
+					<span id="gender-label">Gender (optional):</span>
+					<div class="form-options" role="group" aria-labelledby="gender-label">
+						<span><input type="radio" id="gender-woman" name="gender" value="woman"> <label for="gender-woman">Woman</label></span>
+						<span><input type="radio" id="gender-man" name="gender" value="man"> <label for="gender-man">Man</label></span>
+						<span><input type="radio" id="gender-nonbinary" name="gender" value="nonbinary"> <label for="gender-nonbinary">Non-binary</label></span>
+						<span><input type="radio" id="gender-prefer-not-to-say" name="gender" value="prefer-not-to-say"> <label for="gender-prefer-not-to-say">Prefer not to say</label></span>
+					</div>
+				</div>
+				<p class="form-row">
+					<label for="country">Country (optional):</label>
+					<select id="country" name="country">
+						<option value="">Select a country</option>
+						<option value="ke">Kenya</option>
+						<option value="ca">Canada</option>
+						<option value="gb">United Kingdom</option>
+						<option value="us">United States</option>
+					</select>
+				</p>
+				<p class="form-row form-terms">
+					<input type="checkbox" id="terms" name="terms" required>
+					<label for="terms">I agree to the terms and conditions.</label>
+				</p>
+				<p class="form-row">
+					<label for="msg">Message:</label>
+					<textarea id="msg" name="msg" rows="4" cols="30"></textarea>
+				</p>
+				<div class="form-actions">
+					<button type="submit">Register</button>
+					<button type="reset">Clear</button>
+				</div>
+			</fieldset>
+		</form>
+	</main>
+	<footer><p>&copy; Spendora</p></footer>
+</body>
+</html>
